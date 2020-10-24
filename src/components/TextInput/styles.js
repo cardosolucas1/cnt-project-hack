@@ -3,12 +3,11 @@ import styled from 'styled-components';
 
 const SectionInput = styled.section`
   border-bottom: 5px solid #04618C;
-  margin-bottom: 10px;
-
+  margin-top: 90px;
+  margin-bottom: 20px;
   input {
     background-color: transparent;
     border: none;
-    margin: 8px 0;
     width: 100%;
   }
 
@@ -17,7 +16,6 @@ const SectionInput = styled.section`
   }
 
   label { 
- 
     font-weight: 700;
   }
 `;

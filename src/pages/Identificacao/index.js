@@ -18,7 +18,7 @@ const Identification = () => {
       <TextInput label="ID do Colaborador" />
       <div>
         <Button value="/" title="Voltar" clickFunction={HandleClick}/>
-        <Button value="/next" title="Próxima" clickFunction={HandleClick}/>
+        <Button value="/localization" title="Próxima" clickFunction={HandleClick}/>
       </div>
     </Container>
     
