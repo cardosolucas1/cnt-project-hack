@@ -3,7 +3,7 @@ import SectionInput from './styles';
 
 const TextInput = ({ label }) => 
   <SectionInput>
-    <label for="input" type="text"> { label }
+    <label htmlFor="input" type="text"> { label }
     </label>
     <input id="input"/>
   </SectionInput>;

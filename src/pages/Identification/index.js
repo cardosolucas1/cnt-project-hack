@@ -1,12 +1,14 @@
-import React, { useHistory } from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Container from './styles';
 import TextInput from '../../components/TextInput';
-import Button from '../../components/ButtonList/Button';
+import Button from '../../components/Button';
 
 const Identification = () => {
-  const HandleBack = (route) => {
-    const history = useHistory();
+  const history = useHistory();
+
+  const HandleClick = (route) => {
     history.push(route);
   };
   return (
@@ -15,8 +17,8 @@ const Identification = () => {
     <Container>
       <TextInput label="ID do Colaborador" />
       <div>
-        <Button value="/" title="Voltar" clickFunction={HandleBack}/>
-        <Button value="/next" title="Próxima"/>
+        <Button value="/" title="Voltar" clickFunction={HandleClick}/>
+        <Button value="/next" title="Próxima" clickFunction={HandleClick}/>
       </div>
     </Container>
     
