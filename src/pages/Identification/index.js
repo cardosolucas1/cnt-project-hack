@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+
 import Header from '../../components/Header';
 import Container from './styles';
 import TextInput from '../../components/TextInput';
@@ -9,7 +11,22 @@ const Identification = () => {
   const history = useHistory();
 
   const HandleClick = (route) => {
+    if (route === '/next') {
+    toast.success('Autenticação realizado!', {
+      autoClose: 2500,
+      pauseOnHover: false
+    });
+
+    setTimeout(() => {
+      history.push(route);
+    }, 3000);
+   
+  }
+  
+  else {
     history.push(route);
+  }
+    
   };
   return (
   <section>
@@ -20,6 +37,7 @@ const Identification = () => {
         <Button value="/" title="Voltar" clickFunction={HandleClick}/>
         <Button value="/next" title="Próxima" clickFunction={HandleClick}/>
       </div>
+      <ToastContainer />
     </Container>
     
   </section>
