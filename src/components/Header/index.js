@@ -5,9 +5,12 @@ import HeaderStyled from './styles';
 const Header = ({ title }) => {
   return (
     <HeaderStyled>
-      <button>Navegar</button>
       <h1>{ title }</h1>
-      <button>Sair</button>
+      <div>
+        <button>Navegar</button>
+        <button>Sair</button>
+      </div>
+ 
     </HeaderStyled>
   );
 };
