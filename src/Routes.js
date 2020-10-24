@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Identification from './pages/identification';
+import Identification from './pages/Identification/index';
 
 const Routes = () => (
   <BrowserRouter>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const SectionInput = styled.section`
   border-bottom: 5px solid #04618C;
+  margin-bottom: 10px;
 
   input {
     background-color: transparent;
