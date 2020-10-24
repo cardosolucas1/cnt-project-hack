@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
+  
 
-  .button-cotrol {
-    padding: 20px 50px;
+  button {
+    padding: 20px 40px;
     font-size: 20px;
     border-radius: 5px;
-    margin: 5px 10px;
-    width: 100%;
-    max-width: 160px;
-
+    margin: 5px;
+    min-width: 160px;
     color: #fff;
     background-color: #0B7ABF;
     

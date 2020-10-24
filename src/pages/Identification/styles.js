@@ -10,6 +10,10 @@ const Container = styled.section`
   margin-top: 5%;
   min-height: 400px;
   width: 95%;
+  div {
+    display: inline-block;
+    text-align: center;
+  }
 `;
 
 export default Container;
