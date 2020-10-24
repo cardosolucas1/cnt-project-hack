@@ -11,7 +11,8 @@ const Header = ({ title }) => {
       <h1>{ title }</h1>
       <button>Sair</button>
     </HeaderStyled>
-    <ListButton />
+    <ListButton title="Próximo" />
+    <ListButton title="Voltar" />
     </>
   );
 };
