@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import HeaderStyled from './styles';
 
-const Header = ({ title }) => {
+const Header = ({ title, logged }) => {
   return (
     <HeaderStyled>
-      <button>Navegar</button>
       <h1>{ title }</h1>
-      <button>Sair</button>
+      {logged &&
+        <div>
+          <button>Navegar</button>
+          <button>Sair</button>
+        </div>
+      }
     </HeaderStyled>
   );
 };

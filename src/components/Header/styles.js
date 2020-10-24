@@ -8,16 +8,25 @@ const HeaderStyled = styled.header`
   color: white;
   display: flex;
   height: 70px;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
   button {
     background-color: transparent;
     border: none;
+    border-bottom: 1px solid #f2f2f2;
     color: white;
     font-size: larger;
+    margin-right: 20px;
+    padding: 5px;
   }
   button:hover {
+    color: #f2f2f2;
     cursor: pointer;
+  }
+  div {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
   }
 `;
 
