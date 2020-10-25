@@ -1,34 +1,19 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../../components/Header'
-import Container from './styles';
-import Button from '../../../components/Button';
-import Choice from '../../../components/Choice';
-import Title from '../../../components/Title';
+import ListChoice from '../../../components/ListChoices';
 
-const Localization = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+const Surface = () => {
+  const choices = [
+    { choice: "Perfeito", color: "green" },
+    { choice: "Desgastado", color: "red" },
+  ];
   return (
-    <>
-      <Header title="Pavimento"/>
-      <Container>
-      <Title title="Condição da superfície"/>
-        <section>
-           <Choice title="Perfeito" color="green"/>
-           <Choice title="Desgastado" color="red"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/localization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/speed" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Pavimento"
+    title="Condição da superfície"
+    choices={choices}
+    backLink="/localization"
+    nextLink="/speed"
+  />);
 }
 
-export default Localization;
+export default Surface;

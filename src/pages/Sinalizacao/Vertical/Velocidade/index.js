@@ -1,34 +1,17 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../../../components/Header'
-import Container from '../../../../components/DualChoice/index';
-import Button from '../../../../components/Button';
-import Choice from '../../../../components/Choice';
-import Title from '../../../../components/Title';
-
+import ListChoice from '../../../../components/ListChoices';
 const SpeedVerticalSinalization = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+  const choices = [
+    { choice: "Presente", color: "green" },
+    { choice: "Ausente", color: "red" },
+  ];
   return (
-    <>
-      <Header title="Sinalização"/>
-      <Container>
-      <Title title="Sinalização vertical - Placas de velocidade"/>
-        <section>
-           <Choice title="Presente" color="green"/>
-           <Choice title="Ausente" color="red"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/fendersHorizontalSinalization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/indicationVerticalSinalization" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Sinalização"
+    title="Sinalização vertical - Placas de velocidade"
+    choices={choices}
+    backLink="/fendersHorizontalSinalization"
+    nextLink="/indicationVerticalSinalization"
+  />);
 }
 
 export default SpeedVerticalSinalization;

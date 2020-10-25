@@ -1,35 +1,18 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../../../components/Header'
-import Container from '../../../../components/ChoicesStyled';
-import Button from '../../../../components/Button';
-import Choice from '../../../../components/Choice';
-import Title from '../../../../components/Title';
-
+import ListChoice from '../../../../components/ListChoices';
 const IntersectionVerticalSinalization = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+  const choices = [
+    { choice: "Presenças de placas", color: "green" },
+    { choice: "Ausência de placas", color: "red" },
+    { choice: "Não ocorre interseções", color: "#212226" },
+  ];
   return (
-    <>
-      <Header title="Sinalização"/>
-      <Container>
-      <Title title="Sinalização Vertical - Placas de interseção"/>
-        <section>
-           <Choice title="Presenças de placas" color="green"/>
-           <Choice title="Ausência de placas" color="red"/>
-           <Choice title="Não ocorre interseções" color="#212226"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/indicationVerticalSinalization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/visibilityVerticalSinalization" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Sinalização"
+    title="Sinalização vertical - Placas de interseção"
+    choices={choices}
+    backLink="/indicationVerticalSinalization"
+    nextLink="/visibilityVerticalSinalization"
+  />);
 }
 
 export default IntersectionVerticalSinalization;

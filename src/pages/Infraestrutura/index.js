@@ -1,36 +1,19 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../components/Header'
-import Container from '../../components/ChoicesStyled';
-import Button from '../../components/Button';
-import Choice from '../../components/Choice';
-import Title from '../../components/Title';
-
-const ReadabilityVerticalSinalization = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+import ListChoice from '../../components/ListChoices/index';
+const Infrastructure = () => {
+  const choices = [
+    { choice: "Postos de abastecimento", color: "#212226" },
+    { choice: "Controlador de velocidade", color: "#212226" },
+    { choice: "Borracharia", color: "#212226" },
+    { choice: "Concessionária de caminhões ou ônibos/oficina mecânica", color: "#212226" },
+  ];
   return (
-    <>
-      <Header title="Intraestrutura"/>
-      <Container>
-      <Title title="Intraestrutura de apoio"/>
-        <section>
-           <Choice title="Postos de abastecimento" color="#212226"/>
-           <Choice title="Controlador de velocidade" color="#212226"/>
-           <Choice title="Borracharia" color="#212226"/>
-           <Choice title="Concessionária de caminhões ou ônibos/oficina mecânica" color="#212226"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/readabilityVerticalSinalization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/criticalPoint" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Intraestrutura"
+    title="Intraestrutura de apoio"
+    choices={choices}
+    backLink="/readabilityVerticalSinalization"
+    nextLink="/criticalPoint"
+  />);
 }
 
-export default ReadabilityVerticalSinalization;
+export default Infrastructure;

@@ -16,6 +16,8 @@ import VisibilityVerticalSinalization from './pages/Sinalizacao/Vertical/Visibil
 import ReadabilityVerticalSinalization from './pages/Sinalizacao/Vertical/Legibilidade';
 import Infrastructure from './pages/Infraestrutura';
 import CriticalPoint from './pages/PontosCriticos';
+import HighwayType from './pages/Geometria/TipoRodovia';
+import HighwayProfile from './pages/Geometria/PerfilRodovia';
 
 const Routes = () => (
   <BrowserRouter>
@@ -35,6 +37,8 @@ const Routes = () => (
       <Route exact path="/readabilityVerticalSinalization" component={ReadabilityVerticalSinalization} />
       <Route exact path="/infrastructure" component={Infrastructure} />
       <Route exact path="/criticalPoint" component={CriticalPoint} />
+      <Route exact path="/highwayType" component={HighwayType} />
+      <Route exact path="/highwayProfile" component={HighwayProfile} />
       <Route exact path="/" component={Home} />
     </Switch>
   </BrowserRouter>

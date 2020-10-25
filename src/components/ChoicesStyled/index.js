@@ -19,7 +19,7 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 80%;
     max-width: 500px;
   }

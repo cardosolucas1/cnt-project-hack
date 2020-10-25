@@ -33,7 +33,7 @@ const CriticalPoint = () => {
           </section>
         <div>
           <Button title="Voltar" value="/infrastructure" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/" clickFunction={handleClick}/>
+          <Button title="Próxima" value="/highwayType" clickFunction={handleClick}/>
         </div>
       </Container>
     </>

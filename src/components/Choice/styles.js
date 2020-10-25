@@ -9,6 +9,7 @@ const ChoiceBtn = styled.button`
   font-size: larger;
   font-weight: 700;
   transition: transform .2s linear;
+  margin: 10px 0;
   &:focus {
       color: white;
       background-color: ${props => props.color};
