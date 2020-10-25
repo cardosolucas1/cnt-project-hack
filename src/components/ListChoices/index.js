@@ -28,8 +28,8 @@ const ListChoice = ({
       <Container>
       <Title title={title}/>
         <section>
-          {choices.map(({ choice, color }) => 
-            <Choice color={color} title={choice}/>
+          {choices.map(({ choice, color }, index) => 
+            <Choice  key={index} color={color} title={choice} keyStorage={headerTitle} />
         )}
         </section>
         <div>
@@ -37,7 +37,7 @@ const ListChoice = ({
           <Button title="Próxima" value={nextLink} clickFunction={handleClick}/>
         </div>
       </Container>
-      <Footer buttons={buttons} picture="true" />
+      <Footer buttons={buttons} picture={true} />
     </>
   );
 }

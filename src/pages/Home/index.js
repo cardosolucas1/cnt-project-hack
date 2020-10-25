@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 const Home = () => {
   const history = useHistory();
   const handleClick = (route) => {
+    localStorage.setItem('Forms', JSON.stringify([]));
     history.push(route);
   }
   return (

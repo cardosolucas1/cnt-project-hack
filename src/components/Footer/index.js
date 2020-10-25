@@ -6,10 +6,10 @@ import cam from '../../images/cam.svg';
 const Footer = ({ picture, buttons }) => {
   return (
     <FooterStyled>
-    {buttons.map(({ title }) => <button>{title}</button>)}
+    {buttons.map(({ title }, index) => <button key={index}>{title}</button>)}
       {picture && 
-        <InputSection class="image-upload">
-          <label for="file-input">
+        <InputSection className="image-upload">
+          <label htmlFor="file-input">
               <img src={cam} alt=""/>
           </label>
           <input id="file-input" type="file"/>
