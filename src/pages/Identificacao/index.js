@@ -11,7 +11,7 @@ const Identification = () => {
   const history = useHistory();
 
   const HandleClick = (route) => {
-    if (route === '/next') {
+    if (route === '/localization') {
     toast.success('Autenticação realizado!', {
       autoClose: 2500,
       pauseOnHover: false
@@ -35,7 +35,7 @@ const Identification = () => {
       <TextInput label="ID do Colaborador" />
       <div>
         <Button value="/" title="Voltar" clickFunction={HandleClick}/>
-        <Button value="/next" title="Próxima" clickFunction={HandleClick}/>
+        <Button value="/localization" title="Próxima" clickFunction={HandleClick}/>
       </div>
       <ToastContainer />
     </Container>

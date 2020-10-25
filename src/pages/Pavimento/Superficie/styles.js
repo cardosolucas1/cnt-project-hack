@@ -10,6 +10,18 @@ const Container = styled.section`
   margin-top: 5%;
   min-height: 400px;
   width: 95%;
+  max-width: 1000px;
+  div {
+    display: inline-block;
+    text-align: center;
+  
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    width: 60%;
+  }
 `;
 
 export default Container;
