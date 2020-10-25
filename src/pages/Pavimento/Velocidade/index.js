@@ -1,7 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from '../../../components/Header'
-import Container from './styles';
+// import Container from './styles';
+import Container from '../../../components/ChoicesStyled';
 import Button from '../../../components/Button';
 import Choice from '../../../components/Choice';
 import Title from '../../../components/Title';
@@ -25,7 +26,7 @@ const Localization = () => {
         </section>
         <div>
           <Button title="Voltar" value="/surface" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/speed" clickFunction={handleClick}/>
+          <Button title="Próxima" value="/shoulder" clickFunction={handleClick}/>
         </div>
       </Container>
     </>
