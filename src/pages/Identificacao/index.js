@@ -11,7 +11,7 @@ const Identification = () => {
   const history = useHistory();
 
   const HandleClick = (route) => {
-    if (route === '/next') {
+    if (route === '/localization') {
     toast.success('Autenticação realizado!', {
       autoClose: 2500,
       pauseOnHover: false

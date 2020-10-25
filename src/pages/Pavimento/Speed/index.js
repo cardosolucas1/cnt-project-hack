@@ -17,13 +17,14 @@ const Localization = () => {
     <>
       <Header title="Pavimento"/>
       <Container>
-      <Title title="Condição da superfície"/>
+      <Title title="Velocidade devido ao pavimento"/>
         <section>
-           <Choice title="Perfeito" color="green"/>
-           <Choice title="Desgastado" color="red"/>
+           <Choice title="Não obriga a redução de velocidade" color="green"/>
+           <Choice title="Obriga a redução de velocidade" color="#F28C0F"/>
+           <Choice title="Baixíssima velocidade" color="red"/>
         </section>
         <div>
-          <Button title="Voltar" value="/localization" clickFunction={handleClick}/>
+          <Button title="Voltar" value="/surface" clickFunction={handleClick}/>
           <Button title="Próxima" value="/speed" clickFunction={handleClick}/>
         </div>
       </Container>
