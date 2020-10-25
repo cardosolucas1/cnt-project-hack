@@ -11,6 +11,11 @@ import Lateral from './pages/Sinalizacao/Horizontal/Lateral/';
 import Defensas from './pages/Sinalizacao/Horizontal/Defensas/';
 import SpeedVerticalSinalization from './pages/Sinalizacao/Vertical/Velocidade';
 import IndicationVerticalSinalization from './pages/Sinalizacao/Vertical/Indicacao';
+import IntersectionVerticalSinalization from './pages/Sinalizacao/Vertical/Intersecao';
+import VisibilityVerticalSinalization from './pages/Sinalizacao/Vertical/Visibilidade';
+import ReadabilityVerticalSinalization from './pages/Sinalizacao/Vertical/Legibilidade';
+import Infrastructure from './pages/Infraestrutura';
+import CriticalPoint from './pages/PontosCriticos';
 
 const Routes = () => (
   <BrowserRouter>
@@ -25,6 +30,11 @@ const Routes = () => (
       <Route exact path="/fendersHorizontalSinalization" component={Defensas} />
       <Route exact path="/speedVerticalSinalization" component={SpeedVerticalSinalization} />
       <Route exact path="/indicationVerticalSinalization" component={IndicationVerticalSinalization} />
+      <Route exact path="/intersectionVerticalSinalization" component={IntersectionVerticalSinalization} />
+      <Route exact path="/visibilityVerticalSinalization" component={VisibilityVerticalSinalization} />
+      <Route exact path="/readabilityVerticalSinalization" component={ReadabilityVerticalSinalization} />
+      <Route exact path="/infrastructure" component={Infrastructure} />
+      <Route exact path="/criticalPoint" component={CriticalPoint} />
       <Route exact path="/" component={Home} />
     </Switch>
   </BrowserRouter>
