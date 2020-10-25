@@ -15,11 +15,11 @@ const Container = styled.section`
     text-align: center;
   }
   section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 250px;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 20px 0;
     width: 80%;
     max-width: 500px;
   }

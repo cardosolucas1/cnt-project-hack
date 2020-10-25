@@ -4,9 +4,11 @@ import Header from '../../components/Header'
 import Container from '../../components/ChoicesStyled';
 import Button from '../../components/Button';
 import Title from '../../components/Title';
-import Input from './styles';
+import CheckBox from '../../components/Checkbox/';
+import TextInput from '../../components/TextInput';
 
 const CriticalPoint = () => {
+
   const history = useHistory();
 
   const handleClick = (route) => {
@@ -18,12 +20,17 @@ const CriticalPoint = () => {
       <Header title="Pontos críticos"/>
       <Container>
       <Title title="Identifique os pontos críticos"/>
-        <section>
-          <label htmlFor="nao-possui">
-              Não possui
-            <input type="checkbox" id="nao-possui" />
-          </label>
-        </section>
+          <section>
+            <CheckBox>Não possui</CheckBox>
+            <CheckBox>Queda de barreira</CheckBox>
+            <CheckBox>Ponte caída</CheckBox>
+            <CheckBox>Erosão na pista</CheckBox>
+            <CheckBox>Buraco grande</CheckBox>
+            <CheckBox>Passagem em nível</CheckBox>
+            <CheckBox>Obra no pavimento</CheckBox>
+            <CheckBox>Balança em operação</CheckBox>
+            <TextInput label="Outros"/>
+          </section>
         <div>
           <Button title="Voltar" value="/infrastructure" clickFunction={handleClick}/>
           <Button title="Próxima" value="/" clickFunction={handleClick}/>
