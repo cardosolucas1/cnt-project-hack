@@ -5,6 +5,7 @@ import Container from '../../components/ChoicesStyled';
 import Button from '../../components/Button';
 import Choice from '../../components/Choice';
 import Title from '../../components/Title';
+import Footer from '../../components/Footer'
 
 const ListChoice = ({ 
   headerTitle,
@@ -14,7 +15,9 @@ const ListChoice = ({
   nextLink,
 }) => {
   const history = useHistory();
-
+  const buttons = [
+    { title: 'Navegar', link: '/' },
+  ];
   const handleClick = (route) => {
     history.push(route);
   }
@@ -34,6 +37,7 @@ const ListChoice = ({
           <Button title="Próxima" value={nextLink} clickFunction={handleClick}/>
         </div>
       </Container>
+      <Footer buttons={buttons} picture="true" />
     </>
   );
 }

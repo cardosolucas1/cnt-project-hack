@@ -6,6 +6,7 @@ import Button from '../../components/Button';
 import Title from '../../components/Title';
 import CheckBox from '../../components/Checkbox/';
 import TextInput from '../../components/TextInput';
+import Footer from '../../components/Footer';
 
 const CriticalPoint = () => {
 
@@ -36,6 +37,7 @@ const CriticalPoint = () => {
           <Button title="Próxima" value="/highwayType" clickFunction={handleClick}/>
         </div>
       </Container>
+      <Footer buttons={[{ title: 'Navegar' }]} picture="true" />
     </>
   );
 }

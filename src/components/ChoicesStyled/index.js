@@ -6,8 +6,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: auto;
-  margin-top: 5%;
+  margin: 5% 0 20%;
   min-height: 400px;
   width: 95%;
   div {
