@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/cnt-project-hack/static/js/main.c584d7a5.chunk.js",
+    "main.js.map": "/cnt-project-hack/static/js/main.c584d7a5.chunk.js.map",
+    "runtime-main.js": "/cnt-project-hack/static/js/runtime-main.d38a82d7.js",
+    "runtime-main.js.map": "/cnt-project-hack/static/js/runtime-main.d38a82d7.js.map",
+    "static/css/2.ccc6f86f.chunk.css": "/cnt-project-hack/static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.c45dc79f.chunk.js": "/cnt-project-hack/static/js/2.c45dc79f.chunk.js",
+    "static/js/2.c45dc79f.chunk.js.map": "/cnt-project-hack/static/js/2.c45dc79f.chunk.js.map",
+    "index.html": "/cnt-project-hack/index.html",
+    "static/css/2.ccc6f86f.chunk.css.map": "/cnt-project-hack/static/css/2.ccc6f86f.chunk.css.map",
+    "static/js/2.c45dc79f.chunk.js.LICENSE.txt": "/cnt-project-hack/static/js/2.c45dc79f.chunk.js.LICENSE.txt",
+    "static/media/cam.49bf9763.svg": "/cnt-project-hack/static/media/cam.49bf9763.svg",
+    "static/media/check.02a8291a.svg": "/cnt-project-hack/static/media/check.02a8291a.svg",
+    "static/media/rodovia.500e871f.jpeg": "/cnt-project-hack/static/media/rodovia.500e871f.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d38a82d7.js",
+    "static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.c45dc79f.chunk.js",
+    "static/js/main.c584d7a5.chunk.js"
+  ]
+}
