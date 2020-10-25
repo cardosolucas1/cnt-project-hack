@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Identification from './pages/Identificacao/index';
 import Home from './pages/Home';
 import Localization from './pages/Localizacao';
@@ -25,7 +25,7 @@ import StreetCurvesCondicional from './pages/Geometria/Curvas/Condicao';
 import GeometryShoulder from './pages/Geometria/Acostamento';
 
 const Routes = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route exact path="/identification" component={Identification} />
       <Route exact path="/localization" component={Localization} />
@@ -51,7 +51,7 @@ const Routes = () => (
       <Route exact path="/shoulderConditional" component={GeometryShoulder} />
       <Route exact path="/" component={Home} />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default Routes;
