@@ -23,6 +23,7 @@ import Bridges from './pages/Geometria/PontesViadutos';
 import StreetCurves from './pages/Geometria/Curvas/Situacao';
 import StreetCurvesCondicional from './pages/Geometria/Curvas/Condicao';
 import GeometryShoulder from './pages/Geometria/Acostamento';
+import Resume from './pages/Resumo';
 
 const Routes = () => (
   <HashRouter>
@@ -49,6 +50,7 @@ const Routes = () => (
       <Route exact path="/streetCurves" component={StreetCurves} />
       <Route exact path="/streetCurvesConditional" component={StreetCurvesCondicional} />
       <Route exact path="/shoulderConditional" component={GeometryShoulder} />
+      <Route exact path="/resume" component={Resume} />
       <Route exact path="/" component={Home} />
     </Switch>
   </HashRouter>
