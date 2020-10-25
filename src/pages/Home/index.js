@@ -6,6 +6,7 @@ import Button from '../../components/Button';
 import { motion } from "framer-motion"
 import Footer from '../../components/Footer';
 
+
 const Home = () => {
   const history = useHistory();
   const handleClick = (route) => {
