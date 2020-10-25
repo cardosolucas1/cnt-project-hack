@@ -1,35 +1,18 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../../../components/Header'
-import Container from '../../../../components/ChoicesStyled';
-import Button from '../../../../components/Button';
-import Choice from '../../../../components/Choice';
-import Title from '../../../../components/Title';
-
+import ListChoice from '../../../../components/ListChoices';
 const ReadabilityVerticalSinalization = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+  const choices = [
+    { choice: "Legíveis", color: "green" },
+    { choice: "Desgastadas", color: "orange" },
+    { choice: "Ilegíveis", color: "red" },
+  ];
   return (
-    <>
-      <Header title="Sinalização"/>
-      <Container>
-      <Title title="Sinalização Vertical - Legibilidade das placas"/>
-        <section>
-           <Choice title="Legíveis" color="green"/>
-           <Choice title="Desgastadas" color="orange"/>
-           <Choice title="Ilegíveis" color="red"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/visibilityVerticalSinalization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/infrastructure" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Sinalização"
+    title="Sinalização vertical - Legibilidade das Placas"
+    choices={choices}
+    backLink="/visibilityVerticalSinalization"
+    nextLink="/infrastructure"
+  />);
 }
 
 export default ReadabilityVerticalSinalization;

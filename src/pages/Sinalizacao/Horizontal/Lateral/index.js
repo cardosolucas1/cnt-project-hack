@@ -1,35 +1,20 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../../../../components/Header'
-import Container from '../../../../components/ChoicesStyled';
-import Button from '../../../../components/Button';
-import Choice from '../../../../components/Choice';
-import Title from '../../../../components/Title';
+import ListChoice from '../../../../components/ListChoices';
 
-const Central = () => {
-  const history = useHistory();
-
-  const handleClick = (route) => {
-    history.push(route);
-  }
-  
+const Lateral = () => {
+  const choices = [
+    { choice: "Pintura visível", color: "green" },
+    { choice: "Pintura desgastada", color: "red" },
+    { choice: "Pintura inexistente", color: "#212226" },
+  ];
   return (
-    <>
-      <Header title="Sinalização"/>
-      <Container>
-      <Title title="Sinalização Horizontal - Faixas laterais"/>
-        <section>
-           <Choice title="Pintura visível" color="green"/>
-           <Choice title="Pintura desgastada" color="red"/>
-           <Choice title="Pintura inexistente" color="#212226"/>
-        </section>
-        <div>
-          <Button title="Voltar" value="/centralHorizontalSinalization" clickFunction={handleClick}/>
-          <Button title="Próxima" value="/fendersHorizontalSinalization" clickFunction={handleClick}/>
-        </div>
-      </Container>
-    </>
-  );
+  <ListChoice
+    headerTitle="Sinalização"
+    title="Sinalização Horizontal - Faixas laterais"
+    choices={choices}
+    backLink="/centralHorizontalSinalization"
+    nextLink="/fendersHorizontalSinalization"
+  />);
 }
 
-export default Central;
+export default Lateral;

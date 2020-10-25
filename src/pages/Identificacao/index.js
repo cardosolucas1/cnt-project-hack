@@ -13,13 +13,13 @@ const Identification = () => {
   const HandleClick = (route) => {
     if (route === '/localization') {
     toast.success('Autenticação realizado!', {
-      autoClose: 2500,
+      autoClose: 1500,
       pauseOnHover: false
     });
 
     setTimeout(() => {
       history.push(route);
-    }, 3000);
+    }, 2000);
    
   }
   

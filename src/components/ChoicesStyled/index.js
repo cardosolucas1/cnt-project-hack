@@ -6,8 +6,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: auto;
-  margin-top: 5%;
+  margin: 5% 0 20%;
   min-height: 400px;
   width: 95%;
   div {
@@ -15,11 +14,11 @@ const Container = styled.section`
     text-align: center;
   }
   section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 250px;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 10px 0;
     width: 80%;
     max-width: 500px;
   }

@@ -4,10 +4,13 @@ import Header from '../../components/Header/index';
 import Container from './styles';
 import Button from '../../components/Button';
 import { motion } from "framer-motion"
+import Footer from '../../components/Footer';
+
 
 const Home = () => {
   const history = useHistory();
   const handleClick = (route) => {
+    localStorage.setItem('Forms', JSON.stringify([]));
     history.push(route);
   }
   return (
@@ -30,6 +33,7 @@ const Home = () => {
           <Button title="Formulário" value="/identification" clickFunction={handleClick}/>
         </motion.div>
       </Container>
+      <Footer buttons={[{ title: 'Sinalizar agente', link: '/' }, { title: 'Ajude-me', link: '/' }]}/>
     </>
   );
 };
