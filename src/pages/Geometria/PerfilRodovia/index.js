@@ -9,7 +9,7 @@ const HighwayProfile = () => {
     title="Perfil da Rodovia"
     choices={choices}
     backLink="/highwayType"
-    nextLink="/"
+    nextLink="/additionalStreet"
   />);
 }
 
