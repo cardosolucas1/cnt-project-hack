@@ -11,6 +11,7 @@ const Container = styled.section`
   margin-top: 10px;
   min-height: 500px;
   width: 100%;
+  
 `;
 
 export default Container;
